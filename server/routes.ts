@@ -3,6 +3,8 @@ import { createServer, type Server } from "http";
 import Stripe from "stripe";
 import { storage } from "./storage";
 import { insertOrderSchema } from "@shared/schema";
+import dotenv from "dotenv";
+dotenv.config();
 
 if (!process.env.STRIPE_SECRET_KEY) {
   throw new Error('Missing required Stripe secret: STRIPE_SECRET_KEY');
