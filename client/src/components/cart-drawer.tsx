@@ -36,9 +36,9 @@ export default function CartDrawer({
         <SheetHeader>
           <SheetTitle className="flex items-center justify-between">
             Shopping Cart
-            <Button variant="ghost" size="icon" onClick={onClose}>
+            {/* <Button variant="ghost" size="icon" onClick={onClose}>
               <X className="h-5 w-5" />
-            </Button>
+            </Button> */}
           </SheetTitle>
         </SheetHeader>
         
